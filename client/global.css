@@ -114,7 +114,7 @@
   #root {
     height: 3840px;
     min-height: 100%;
-    width:2160px;
+    width: 2160px;
     /* overflow: hidden; */
   }
 
@@ -198,9 +198,21 @@
   }
 
   /* Active learn more that sits inside the arrow area */
-  .learn-more-active { display: flex; align-items: center; gap: 8px; }
-  .learn-more-active span { color: #fff; }
-  .learn-more-active-rotated { transform: rotate(-90deg); transform-origin: center; display: flex; align-items: center; justify-content: center; }
+  .learn-more-active {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .learn-more-active span {
+    color: #fff;
+  }
+  .learn-more-active-rotated {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   /* Typography helper classes to use exact sizes */
   .h1 {
@@ -222,14 +234,29 @@
   }
 
   /* InfoCard active/default states and progress */
-  .info-card { transition: width 200ms ease; }
-  .info-card .progress-bar { height: 3px; background: transparent; width: 0; }
-  .info-card.active .progress-bar { height: 16px; background: linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%); }
-  .info-card .progress-bar.active { animation: progress-6s 6s linear forwards; }
+  .info-card {
+    transition: width 200ms ease;
+  }
+  .info-card .progress-bar {
+    height: 3px;
+    background: transparent;
+    width: 0;
+  }
+  .info-card.active .progress-bar {
+    height: 16px;
+    background: linear-gradient(90deg, #f0e389 0%, #ffb200 50%, #b78700 100%);
+  }
+  .info-card .progress-bar.active {
+    animation: progress-6s 6s linear forwards;
+  }
 
   @keyframes progress-6s {
-    from { width: 0%; }
-    to { width: 100%; }
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
   }
 
   /* Active indicator for nav items */

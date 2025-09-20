@@ -16,7 +16,11 @@ export default function Index() {
         <>
           sHTG is an <span className="font-bold">underappreciated</span> disease
           that affects millions and requires urgent action, as highlighted in
-          expert publications by the <span className="font-bold">American Heart Association</span>, the <span className="font-bold">American College of Cardiology</span>, the <span className="font-bold">Endocrine Society</span>, and the <span className="font-bold">National Lipid Association</span>
+          expert publications by the{" "}
+          <span className="font-bold">American Heart Association</span>, the{" "}
+          <span className="font-bold">American College of Cardiology</span>, the{" "}
+          <span className="font-bold">Endocrine Society</span>, and the{" "}
+          <span className="font-bold">National Lipid Association</span>
           <span className="text-[24px] align-top">1-7</span>
         </>
       ),
@@ -25,7 +29,11 @@ export default function Index() {
       icon: <PancreasIcon className="w-full h-full" />,
       content: (
         <>
-          The risk of <span className="font-bold">life-threatening acute pancreatitis (AP)</span> associated with sHTG is serious and demands urgent action
+          The risk of{" "}
+          <span className="font-bold">
+            life-threatening acute pancreatitis (AP)
+          </span>{" "}
+          associated with sHTG is serious and demands urgent action
           <span className="text-[24px] align-top">8</span>
         </>
       ),
@@ -34,7 +42,11 @@ export default function Index() {
       icon: <HeartIcon className="w-full h-full" />,
       content: (
         <>
-          sHTG <span className="font-bold">substantially increases a person's risk of atherosclerotic cardiovascular disease (ASCVD)</span>
+          sHTG{" "}
+          <span className="font-bold">
+            substantially increases a person's risk of atherosclerotic
+            cardiovascular disease (ASCVD)
+          </span>
           <span className="text-[24px] align-top">1,9</span>
         </>
       ),
@@ -43,7 +55,12 @@ export default function Index() {
       icon: <StomachIcon className="w-full h-full" />,
       content: (
         <>
-          The full <span className="font-bold">physical and mental impact</span> of sHTG on patients, from <span className="font-bold">metabolic dysfunction-associated steatohepatitis (MASH) to brain fog</span>, is likely underestimated
+          The full <span className="font-bold">physical and mental impact</span>{" "}
+          of sHTG on patients, from{" "}
+          <span className="font-bold">
+            metabolic dysfunction-associated steatohepatitis (MASH) to brain fog
+          </span>
+          , is likely underestimated
           <span className="text-[24px] align-top">10,11</span>
         </>
       ),
@@ -52,7 +69,12 @@ export default function Index() {
       icon: <PillIcon className="w-full h-full" />,
       content: (
         <>
-          sHTG is <span className="font-bold">difficult to control, requiring vigilant management and urgent intervention</span> with standard-of-care treatment
+          sHTG is{" "}
+          <span className="font-bold">
+            difficult to control, requiring vigilant management and urgent
+            intervention
+          </span>{" "}
+          with standard-of-care treatment
           <span className="text-[24px] align-top">7,12</span>
         </>
       ),
