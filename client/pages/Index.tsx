@@ -1,62 +1,77 @@
-import { DemoResponse } from "@shared/api";
-import { useEffect, useState } from "react";
+import TGAwareLogo from '@/components/TGAwareLogo';
+import InfoCard from '@/components/InfoCard';
+import NavigationBar from '@/components/NavigationBar';
+import PeopleIcon from '@/components/icons/PeopleIcon';
+import PancreasIcon from '@/components/icons/PancreasIcon';
+import HeartIcon from '@/components/icons/HeartIcon';
+import StomachIcon from '@/components/icons/StomachIcon';
+import PillIcon from '@/components/icons/PillIcon';
 
 export default function Index() {
-  const [exampleFromServer, setExampleFromServer] = useState("");
-  // Fetch users on component mount
-  useEffect(() => {
-    fetchDemo();
-  }, []);
-
-  // Example of how to fetch data from the server (if needed)
-  const fetchDemo = async () => {
-    try {
-      const response = await fetch("/api/demo");
-      const data = (await response.json()) as DemoResponse;
-      setExampleFromServer(data.message);
-    } catch (error) {
-      console.error("Error fetching hello:", error);
-    }
-  };
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-            />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
-            />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-        <p className="mt-4 hidden max-w-md">{exampleFromServer}</p>
+    <div className="min-h-screen bg-medical-red-complex">
+      {/* Hero Section */}
+      <div className="relative px-4 md:px-16 pt-8 md:pt-16 pb-16 md:pb-32">
+        {/* Logo */}
+        <div className="flex justify-center mb-8 md:mb-16">
+          <TGAwareLogo className="w-48 h-20 md:w-[373px] md:h-[157px]" />
+        </div>
+
+        {/* Decorative line */}
+        <div className="w-full max-w-7xl mx-auto h-1 bg-medical-gold-gradient mb-8 md:mb-16"></div>
+
+        {/* Main Heading */}
+        <div className="text-center space-y-4 md:space-y-8 max-w-7xl mx-auto">
+          <h1 className="text-white text-2xl md:text-6xl lg:text-[120px] font-light leading-tight md:leading-[140px]">
+            Severe hypertriglyceridemia (sHTG) and its dangers demand
+          </h1>
+          
+          <div className="text-gradient-gold text-3xl md:text-7xl lg:text-[150px] font-bold leading-tight md:leading-[140px]">
+            urgent action<span className="font-normal">¹</span>
+          </div>
+        </div>
       </div>
+
+      {/* Information Cards Section */}
+      <div className="px-4 md:px-16 space-y-8 md:space-y-16 pb-16 md:pb-32">
+        <InfoCard 
+          icon={<PeopleIcon className="w-full h-full" />}
+          onClick={() => console.log('People card clicked')}
+        >
+          sHTG is an <span className="font-bold">underappreciated</span> disease that affects millions and requires urgent action, as highlighted in expert publications by the <span className="font-bold">American Heart Association</span>, the <span className="font-bold">American College of Cardiology</span>, the <span className="font-bold">Endocrine Society</span>, and the <span className="font-bold">National Lipid Association</span><span className="text-xs md:text-2xl align-top">1-7</span>
+        </InfoCard>
+
+        <InfoCard 
+          icon={<PancreasIcon className="w-full h-full" />}
+          onClick={() => console.log('Pancreas card clicked')}
+        >
+          The risk of <span className="font-bold">life-threatening acute pancreatitis (AP)</span> associated with sHTG is serious and demands urgent action<span className="text-xs md:text-2xl align-top">8</span>
+        </InfoCard>
+
+        <InfoCard 
+          icon={<HeartIcon className="w-full h-full" />}
+          onClick={() => console.log('Heart card clicked')}
+        >
+          sHTG <span className="font-bold">substantially increases a person's risk of atherosclerotic cardiovascular disease (ASCVD)</span><span className="text-xs md:text-2xl align-top">1,9</span>
+        </InfoCard>
+
+        <InfoCard 
+          icon={<StomachIcon className="w-full h-full" />}
+          onClick={() => console.log('Stomach card clicked')}
+        >
+          The full <span className="font-bold">physical and mental impact</span> of sHTG on patients, from <span className="font-bold">metabolic dysfunction-associated steatohepatitis (MASH) to brain fog</span>, is likely underestimated<span className="text-xs md:text-2xl align-top">10,11</span>
+        </InfoCard>
+
+        <InfoCard 
+          icon={<PillIcon className="w-full h-full" />}
+          onClick={() => console.log('Pill card clicked')}
+        >
+          sHTG is <span className="font-bold">difficult to control, requiring vigilant management and urgent intervention</span> with standard-of-care treatment<span className="text-xs md:text-2xl align-top">7,12</span>
+        </InfoCard>
+      </div>
+
+      {/* Navigation Bar */}
+      <NavigationBar />
     </div>
   );
 }
