@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <div className="w-[2160px] h-[3840px] bg-medical-red-complex mx-auto">
       {/* Hero Section */}
-      <div className="relative px-[150px] pt-[232px] pb-[200px]">
+      <div className="relative px-[150px] pt-[232px] pb-[200px] overflow-visible">
         {/* Logo */}
         <div className="flex justify-center mb-[32px]">
           <TGAwareLogo className="w-[373px] h-[157px]" />
