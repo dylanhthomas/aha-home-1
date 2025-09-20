@@ -18,7 +18,8 @@ export default function NavigationBar() {
 
             <div className="nav-button-wrapper">
             <div className="flex items-center justify-center relative home-button">
-            <svg
+                <button>
+                  <svg
               width="79"
               height="81"
               viewBox="0 0 79 81"
@@ -34,7 +35,8 @@ export default function NavigationBar() {
                 d="M39.4607 13.1726L7.49976 42.6623V80.0599H31.2233V58.9723H47.698V80.0599H71.4216V42.6623C71.2568 42.6623 39.4607 13.1726 39.4607 13.1726Z"
                 fill="#B82026"
               />
-            </svg>
+                  </svg>
+            </button>
             {homeActive && <div className="active-indicator" />}
               </div>
           </div>
