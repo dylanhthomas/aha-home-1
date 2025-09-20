@@ -27,7 +27,7 @@ export default function InfoCard({ icon, children, onClick, active = false, onPr
             <stop offset="100%" stopColor="#B78700" />
           </linearGradient>
         </defs>
-        <rect x="1.5" y="1.5" width="1856" height="341" rx="8" ry="8" fill="transparent" stroke={`url(#${gradId})`} strokeWidth={active ? 16 : 3} />
+        <rect x="1.5" y="1.5" width="1856" height="341" rx="0" ry="0" fill="transparent" stroke={`url(#${gradId})`} strokeWidth={active ? 16 : 3} />
       </svg>
 
       <div className="relative">
