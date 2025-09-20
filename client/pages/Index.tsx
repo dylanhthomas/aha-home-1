@@ -21,7 +21,7 @@ export default function Index() {
         <div className="w-[1860px] mx-auto h-1 bg-medical-gold-gradient mb-[48px]"></div>
 
         {/* Main Heading */}
-        <div className="text-center space-y-8 max-w-[1884px] mx-auto">
+        <div className="text-center space-y-8 max-w-[1884px] mx-auto overflow-visible">
           <h1 className="text-white text-[120px] font-light leading-[140px] px-4 text-center">
             Severe hypertriglyceridemia (sHTG) and its dangers demand
           </h1>
