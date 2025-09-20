@@ -30,6 +30,8 @@ export default function NavigationBar() {
           </div>
         </div>
 
+        <div className="nav-sep" />
+
         {/* Navigation Items */}
         <div className="flex items-center flex-1 justify-center">
           {navigationItems.map((item, index) => (
