@@ -75,7 +75,6 @@ export default function NavigationBar() {
               <button className="text-black text-[40px] font-medium hover:text-medical-red-500 transition-colors text-center whitespace-nowrap">
                 Other risks
               </button>
-              <div className="active-indicator" />
             </div>
           </div>
 
