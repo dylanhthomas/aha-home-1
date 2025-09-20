@@ -123,33 +123,97 @@
   /* Ensure Inter font is loaded */
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
+  /* Design tokens (from Figma) - use HSL where possible */
+  :root {
+    /* Gold gradient stops (HSL approximations) */
+    --gold-stop-1: 48 86% 73%; /* approx for #F0E389 */
+    --gold-stop-2: 41 100% 50%; /* approx for #FFB200 */
+    --gold-stop-3: 44 100% 36%; /* approx for #B78700 */
+
+    --gold-gradient: linear-gradient(180deg, hsl(var(--gold-stop-1)) 0%, hsl(var(--gold-stop-2)) 50%, hsl(var(--gold-stop-3)) 100%);
+
+    /* Red primary (HSL approximations) */
+    --red-primary: 351 77% 20%; /* #B62026 */
+
+    /* Typography tokens */
+    --h1-size: 120px;
+    --h1-line: 140px;
+    --lead-size: 150px;
+    --lead-line: 220px;
+    --card-text-size: 45px;
+    --learn-size: 20px;
+
+    /* Z-index layers */
+    --z-hero: 10;
+    --z-card: 20;
+    --z-nav: 30;
+  }
+
   /* Medical App Specific Styles */
   .text-gradient-gold {
-    background: linear-gradient(90deg, #f0e389 0%, #ffb200 50%, #b78700 100%);
+    background: var(--gold-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent; /* Fallback for browsers that don't support background-clip */
+    color: transparent; /* Fallback */
   }
 
-  .card-gradient-border {
-    /* Transparent inner area with a gold gradient border that lets the page background show through */
-    border: 3px solid transparent;
-    border-image: linear-gradient(90deg, #f0e389 0%, #ffb200 50%, #b78700 100%)
-      1;
-    background: transparent; /* Let page background show through */
-  }
+  /* Card border is rendered via SVG rect in the component for pixel-perfect control */
 
-  /* removed the previous ::before overlay so the inner background is transparent */
-
-  /* Vertical gradient divider used in InfoCard */
-  .vertical-gradient-gold {
+  /* Divider using single CSS gradient (used when not using inline SVG) */
+  .vertical-divider {
     width: 3px;
     height: 244px;
-    background: linear-gradient(180deg, #F0E389 0%, #FFB200 50%, #B78700 100%);
+    background: var(--gold-gradient);
     border-radius: 2px;
     margin-left: 32px;
     margin-right: 32px;
     align-self: center;
   }
+
+  /* Learn more rotated label */
+  .learn-more {
+    transform: rotate(-90deg);
+    transform-origin: left center;
+    font-size: var(--learn-size);
+    letter-spacing: 0.12em;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  /* Typography helper classes to use exact sizes */
+  .h1 {
+    font-size: var(--h1-size);
+    line-height: var(--h1-line);
+    font-weight: 300;
+  }
+
+  .lead {
+    font-size: var(--lead-size);
+    line-height: var(--lead-line);
+    font-weight: 700;
+  }
+
+  .card-text {
+    font-size: var(--card-text-size);
+    line-height: 1.1;
+    font-weight: 400;
+  }
+
+  /* Active indicator for nav items */
+  .nav-item { position: relative; }
+  .nav-item .active-indicator {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 160px;
+    height: 14px;
+    background: hsl(var(--red-primary));
+    border-radius: 2px;
+  }
+
+  /* z-index helpers */
+  .z-hero { z-index: var(--z-hero); }
+  .z-card { z-index: var(--z-card); }
+  .z-nav { z-index: var(--z-nav); }
 }
