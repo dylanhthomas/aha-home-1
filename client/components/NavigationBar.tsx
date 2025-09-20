@@ -27,15 +27,16 @@ export default function NavigationBar() {
         </div>
 
         {/* Navigation Items */}
-        <div className="flex items-center space-x-2 md:space-x-16 flex-1 justify-center">
+        <div className="flex items-center space-x-16 flex-1 justify-center">
           {navigationItems.map((item, index) => (
-            <div key={item.label} className="flex items-center">
+            <div key={item.label} className={`flex items-center nav-item ${item.active ? 'active' : ''}`}>
               {index > 0 && (
                 <div className="w-px h-[115px] bg-black mr-16"></div>
               )}
               <button className="text-black text-[40px] font-medium hover:text-medical-red-500 transition-colors text-center whitespace-nowrap">
                 {item.label}
               </button>
+              {item.active && <div className="active-indicator" />}
             </div>
           ))}
         </div>
