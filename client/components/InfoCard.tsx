@@ -46,26 +46,29 @@ export default function InfoCard({ icon, children, onClick, active = false, onPr
           </div>
 
           {/* Arrow Section */}
-          <div className="w-[76px] bg-card-arrow-gradient flex items-center justify-center flex-shrink-0 relative z-10">
-            <ChevronRight className={`w-12 h-12 text-white transform ${active ? "rotate-0" : "rotate-90"}`} strokeWidth={4} />
+      <div className="w-[76px] bg-card-arrow-gradient flex items-center justify-center flex-shrink-0 relative z-10">
+        {!active ? (
+          <ChevronRight className={`w-12 h-12 text-white transform rotate-90`} strokeWidth={4} />
+        ) : (
+          <div className="learn-more-active flex items-center text-white text-[20px] leading-none">
+            <span className="font-medium mr-3">LEARN</span>
+            <ChevronRight className={`w-6 h-6 text-white`} strokeWidth={4} />
+            <span className="font-medium ml-3">MORE</span>
           </div>
-        </div>
-      </div>
-
-      {/* Learn More Text (visible when active) */}
-      <div className={`absolute right-[48px] top-1/2 transform -translate-y-1/2 translate-x-full origin-left z-20 ${active ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
-        <div className="learn-more">LEARN MORE</div>
-      </div>
-
-      {/* Progress bar (bottom) */}
-      <div className="absolute left-0 bottom-0 w-full overflow-hidden">
-        <div
-          className={`progress-bar ${active ? "active" : ""}`}
-          onAnimationEnd={() => {
-            if (active && onProgressComplete) onProgressComplete();
-          }}
-        />
+        )}
       </div>
     </div>
+  </div>
+
+  {/* Progress bar (bottom) */}
+  <div className="absolute left-0 bottom-0 w-full overflow-hidden">
+    <div
+      className={`progress-bar ${active ? "active" : ""}`}
+      onAnimationEnd={() => {
+        if (active && onProgressComplete) onProgressComplete();
+      }}
+    />
+  </div>
+</div>
   );
 }
