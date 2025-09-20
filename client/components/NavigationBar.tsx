@@ -32,9 +32,10 @@ export default function NavigationBar() {
           </div>
         </div>
 
-        <div className="nav-sep" />
 
         {/* Navigation Items (static) */}
+        <div className="nav-sep" />
+
         <div className="flex items-center flex-1 justify-center">
           <div className="flex items-center nav-item">
             <div className="nav-button-wrapper">
