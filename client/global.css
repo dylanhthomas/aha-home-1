@@ -204,12 +204,21 @@
   .nav-item { position: relative; }
   .nav-item .active-indicator {
     position: absolute;
-    left: 0;
     bottom: -6px;
-    width: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--active-width, 160px);
     height: 14px;
     background: hsl(var(--red-primary));
     border-radius: 2px;
+  }
+
+  /* Navigation separator */
+  .nav-sep {
+    width: 1px;
+    height: 115px;
+    background: hsl(var(--sidebar-border));
+    margin-right: 16px;
   }
 
   /* z-index helpers */
