@@ -14,8 +14,10 @@ export default function NavigationBar() {
         <div className="flex items-center flex-1">
 
 
-        <div className={`nav-item ${homeActive ? "active" : ""}`}>
-          <div className="w-[79px] h-[79px] flex items-center justify-center relative home-button">
+        <div className={`<div className="nav-button-wrapper">nav-item ${homeActive ? "active" : ""}`}>
+
+            <div className="nav-button-wrapper">
+            <div className="w-[79px] h-[79px] flex items-center justify-center relative home-button">
             <svg
               width="79"
               height="81"
@@ -34,6 +36,7 @@ export default function NavigationBar() {
               />
             </svg>
             {homeActive && <div className="active-indicator" />}
+              </div>
           </div>
         </div>
 
@@ -86,7 +89,9 @@ export default function NavigationBar() {
 
         {/* Reference Book */}
           <div className="relative w-[97px] h-[97px] flex items-center justify-center nav-item">
-          <RefBook className="w-[97px] h-[97px]" />
+            <div className="nav-button-wrapper">
+              <RefBook className="w-[97px] h-[97px]" />
+          </div>
           </div>
         </div>
       </div>
