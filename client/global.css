@@ -109,7 +109,9 @@
     @apply border-border;
   }
 
-  html, body, #root {
+  html,
+  body,
+  #root {
     height: 3840px;
     min-height: 100%;
   }
@@ -220,7 +222,6 @@
   .nav-button-wrapper {
     position: relative;
     display: inline-block;
-
   }
   .nav-button-wrapper .active-indicator,
   .home-button .active-indicator {
@@ -233,10 +234,10 @@
     background: #b82026;
   }
 
-.nav-button-wrapper button{
+  .nav-button-wrapper button {
     padding: 0 67px;
     height: 115px;
-}
+  }
 
   /* Navigation separator */
   .nav-sep {
