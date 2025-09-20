@@ -214,6 +214,17 @@
     font-weight: 400;
   }
 
+  /* InfoCard active/default states and progress */
+  .info-card { transition: width 200ms ease; }
+  .info-card .progress-bar { height: 3px; background: transparent; width: 0; }
+  .info-card.active .progress-bar { height: 16px; background: linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%); }
+  .info-card .progress-bar.active { animation: progress-6s linear forwards; }
+
+  @keyframes progress-6s {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+
   /* Active indicator for nav items */
   .nav-item {
     display: inline-flex;
