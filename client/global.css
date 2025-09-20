@@ -200,6 +200,7 @@
   /* Active learn more that sits inside the arrow area */
   .learn-more-active { display: flex; align-items: center; gap: 8px; }
   .learn-more-active span { color: #fff; }
+  .learn-more-active-rotated { transform: rotate(-90deg); transform-origin: center; display: flex; align-items: center; justify-content: center; }
 
   /* Typography helper classes to use exact sizes */
   .h1 {
