@@ -96,7 +96,7 @@ export default function Index() {
       </div>
 
       {/* Information Cards Section */}
-      <div className="px-[150px] space-y-16 pb-[300px]">
+      <div className="flex flex-col items-center space-y-16 pb-[300px]">
         {cards.map((c, i) => (
           <InfoCard
             key={i}
