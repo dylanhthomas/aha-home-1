@@ -51,7 +51,7 @@ export default function InfoCard({ icon, children, onClick, active = false, onPr
           <ChevronRight className={`w-12 h-12 text-white transform rotate-90`} strokeWidth={4} />
         ) : (
           <div className="learn-more-active-rotated">
-            <div className="learn-more-active flex items-center text-white text-[20px] leading-none">
+            <div className="learn-more-active flex items-center text-white text-[30px] leading-none">
               <span className="font-medium mr-3">LEARN</span>
               <ChevronRight className={`w-6 h-6 text-white`} strokeWidth={4} />
               <span className="font-medium ml-3">MORE</span>
