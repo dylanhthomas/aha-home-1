@@ -80,13 +80,14 @@ export default function NavigationBar() {
               <button className="text-black text-[40px] font-medium hover:text-medical-red-500 transition-colors text-center whitespace-nowrap">Management</button>
             </div>
           </div>
-        </div>
+
 
         <div className="nav-sep" />
 
         {/* Reference Book */}
         <div className="relative w-[97px] h-[97px] flex items-center justify-center">
           <RefBook className="w-[97px] h-[97px]" />
+          </div>
         </div>
       </div>
     </div>
