@@ -28,9 +28,7 @@ export default function Index() {
 
           <div className="text-gradient-gold text-[150px] font-bold leading-[220px] overflow-visible inline-block align-baseline pb-[40px]">
             urgent action
-            <span className="font-normal text-[48px] align-top">
-              ¹
-            </span>
+            <span className="font-normal text-[48px] align-top">¹</span>
           </div>
         </div>
       </div>

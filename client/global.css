@@ -130,7 +130,12 @@
     --gold-stop-2: 41 100% 50%; /* approx for #FFB200 */
     --gold-stop-3: 44 100% 36%; /* approx for #B78700 */
 
-    --gold-gradient: linear-gradient(180deg, hsl(var(--gold-stop-1)) 0%, hsl(var(--gold-stop-2)) 50%, hsl(var(--gold-stop-3)) 100%);
+    --gold-gradient: linear-gradient(
+      180deg,
+      hsl(var(--gold-stop-1)) 0%,
+      hsl(var(--gold-stop-2)) 50%,
+      hsl(var(--gold-stop-3)) 100%
+    );
 
     /* Red primary (HSL approximations) */
     --red-primary: 351 77% 20%; /* #B62026 */
@@ -201,8 +206,15 @@
   }
 
   /* Active indicator for nav items */
-  .nav-item { display: inline-flex; align-items: center; }
-  .nav-button-wrapper { position: relative; display: inline-block; padding: 0 67px; }
+  .nav-item {
+    display: inline-flex;
+    align-items: center;
+  }
+  .nav-button-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 0 67px;
+  }
   .nav-button-wrapper .active-indicator,
   .home-button .active-indicator {
     position: absolute;
@@ -211,7 +223,7 @@
     right: 0;
     width: auto;
     height: 14px;
-    background: #B82026;
+    background: #b82026;
     border-radius: 2px;
   }
 
@@ -224,7 +236,13 @@
   }
 
   /* z-index helpers */
-  .z-hero { z-index: var(--z-hero); }
-  .z-card { z-index: var(--z-card); }
-  .z-nav { z-index: var(--z-nav); }
+  .z-hero {
+    z-index: var(--z-hero);
+  }
+  .z-card {
+    z-index: var(--z-card);
+  }
+  .z-nav {
+    z-index: var(--z-nav);
+  }
 }

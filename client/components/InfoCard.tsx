@@ -17,7 +17,12 @@ export default function InfoCard({ icon, children, onClick }: InfoCardProps) {
       onClick={onClick}
     >
       {/* SVG border for exact stroke rendering */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 1859 344" preserveAspectRatio="none" aria-hidden>
+      <svg
+        className="absolute inset-0 w-full h-full pointer-events-none"
+        viewBox="0 0 1859 344"
+        preserveAspectRatio="none"
+        aria-hidden
+      >
         <defs>
           <linearGradient id={gradId} x1="0" y1="0" x2="1" y2="0">
             <stop offset="0%" stopColor="#F0E389" />
@@ -25,7 +30,17 @@ export default function InfoCard({ icon, children, onClick }: InfoCardProps) {
             <stop offset="100%" stopColor="#B78700" />
           </linearGradient>
         </defs>
-        <rect x="1.5" y="1.5" width="1856" height="341" rx="8" ry="8" fill="transparent" stroke={`url(#${gradId})`} strokeWidth="3" />
+        <rect
+          x="1.5"
+          y="1.5"
+          width="1856"
+          height="341"
+          rx="8"
+          ry="8"
+          fill="transparent"
+          stroke={`url(#${gradId})`}
+          strokeWidth="3"
+        />
       </svg>
 
       <div className="relative">
@@ -42,9 +57,7 @@ export default function InfoCard({ icon, children, onClick }: InfoCardProps) {
 
           {/* Content Section */}
           <div className="flex-1 p-[40px] flex items-center relative z-10">
-            <div className="text-white card-text">
-              {children}
-            </div>
+            <div className="text-white card-text">{children}</div>
           </div>
 
           {/* Arrow Section */}
@@ -59,9 +72,7 @@ export default function InfoCard({ icon, children, onClick }: InfoCardProps) {
 
       {/* Learn More Text */}
       <div className="absolute right-[48px] top-1/2 transform -translate-y-1/2 translate-x-full origin-left z-20">
-        <div className="learn-more">
-          LEARN MORE
-        </div>
+        <div className="learn-more">LEARN MORE</div>
       </div>
     </div>
   );
