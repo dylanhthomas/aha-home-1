@@ -201,12 +201,14 @@
   }
 
   /* Active indicator for nav items */
-  .nav-item { position: relative; display: inline-flex; align-items: center; justify-content: center; }
-  .nav-item .active-indicator {
+  .nav-item { display: inline-flex; align-items: center; }
+  .nav-button-wrapper { position: relative; display: inline-block; }
+  .nav-button-wrapper .active-indicator,
+  .home-button .active-indicator {
     position: absolute;
     bottom: -6px;
     left: 0;
-    width: var(--active-width, 160px);
+    width: 100%;
     height: 14px;
     background: #B82026;
     border-radius: 2px;
