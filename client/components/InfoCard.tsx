@@ -22,8 +22,17 @@ export default function InfoCard({ icon, children, onClick }: InfoCardProps) {
             </div>
           </div>
 
-          {/* Vertical Line (3px gradient, centered with gaps top/bottom to match Figma) */}
-        <div className="vertical-gradient-gold flex-shrink-0"></div>
+          {/* Vertical SVG divider (matches Figma) */}
+        <svg className="flex-shrink-0 mx-8 my-[50px]" width="5" height="244" viewBox="0 0 5 217" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <path d="M2 217L3.00001 -7.8135e-06" stroke="url(#paint0_linear_2046_5012)" strokeWidth="3" />
+          <defs>
+            <linearGradient id="paint0_linear_2046_5012" x1="-228" y1="-50" x2="1598" y2="266.001" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#F0E389" />
+              <stop offset="0.5" stopColor="#FFB200" />
+              <stop offset="1" stopColor="#B78700" />
+            </linearGradient>
+          </defs>
+        </svg>
 
           {/* Content Section */}
           <div className="flex-1 p-[40px] flex items-center relative z-10">
