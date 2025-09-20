@@ -14,7 +14,7 @@ export default function NavigationBar() {
         <div className="flex items-center flex-1">
 
 
-        <div className={`<div className="nav-button-wrapper">nav-item ${homeActive ? "active" : ""}`}>
+        <div className={`nav-item ${homeActive ? "active" : ""}`}>
 
             <div className="nav-button-wrapper">
             <div className="flex items-center justify-center relative home-button">
