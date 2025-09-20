@@ -9,6 +9,11 @@ export default function NavigationBar() {
       {/* Main navigation content */}
       <div className="flex items-center justify-between py-[96px]">
         {/* Home Icon with active support */}
+
+
+        <div className="flex items-center flex-1 justify-center">
+
+
         <div className={`nav-item ${homeActive ? "active" : ""}`}>
           <div className="w-[79px] h-[79px] flex items-center justify-center relative home-button">
             <svg
@@ -36,7 +41,6 @@ export default function NavigationBar() {
         {/* Navigation Items (static) */}
         <div className="nav-sep" />
 
-        <div className="flex items-center flex-1 justify-center">
           <div className="flex items-center nav-item">
             <div className="nav-button-wrapper">
               <button className="text-black text-[40px] font-medium hover:text-medical-red-500 transition-colors text-center whitespace-nowrap">About sHTG</button>
