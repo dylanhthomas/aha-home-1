@@ -225,13 +225,12 @@
   .nav-button-wrapper .active-indicator,
   .home-button .active-indicator {
     position: absolute;
-    bottom: -6px;
+    bottom: -49px;
     left: 0;
     right: 0;
     width: auto;
     height: 14px;
     background: #b82026;
-    border-radius: 2px;
   }
 
 .nav-button-wrapper button{
