@@ -85,7 +85,7 @@ export default function NavigationBar() {
         <div className="nav-sep" />
 
         {/* Reference Book */}
-        <div className="relative w-[97px] h-[97px] flex items-center justify-center">
+          <div className="relative w-[97px] h-[97px] flex items-center justify-center nav-item">
           <RefBook className="w-[97px] h-[97px]" />
           </div>
         </div>
