@@ -127,16 +127,11 @@
   }
 
   .card-gradient-border {
-    position: relative;
-    background: linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%);
-    padding: 3px;
+    /* Transparent inner area with a gold gradient border that lets the page background show through */
+    border: 3px solid transparent;
+    border-image: linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%) 1;
+    background: transparent; /* Let page background show through */
   }
 
-  .card-gradient-border::before {
-    content: '';
-    position: absolute;
-    inset: 3px;
-    background: linear-gradient(162deg, #B62026 0%, #591012 49.52%, #110101 100%);
-    z-index: -1;
-  }
+  /* removed the previous ::before overlay so the inner background is transparent */
 }
