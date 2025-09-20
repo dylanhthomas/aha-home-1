@@ -115,7 +115,7 @@
     height: 3840px;
     min-height: 100%;
     width:2160px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   body {
