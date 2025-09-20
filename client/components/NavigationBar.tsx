@@ -7,7 +7,7 @@ export default function NavigationBar() {
   return (
     <div className="w-[2160px] mx-auto bg-white relative z-nav">
       {/* Main navigation content */}
-      <div className="flex items-center justify-between px-[65px] py-[96px]">
+      <div className="flex items-center justify-between py-[96px]">
         {/* Home Icon with active support */}
         <div className={`nav-item ${homeActive ? "active" : ""}`}>
           <div className="w-[79px] h-[79px] flex items-center justify-center relative home-button">
