@@ -11,7 +11,7 @@ export default function NavigationBar() {
         {/* Home Icon with active support */}
 
 
-        <div className="flex items-center flex-1 justify-center">
+        <div className="flex items-center flex-1">
 
 
         <div className={`nav-item ${homeActive ? "active" : ""}`}>
