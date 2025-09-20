@@ -227,8 +227,7 @@
     border-radius: 2px;
   }
 
-.nav-button-wrapper button,
-.nav-button-wrapper svg{
+.nav-button-wrapper button{
     padding: 0 67px;
 }
 
