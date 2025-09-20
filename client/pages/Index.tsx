@@ -26,7 +26,7 @@ export default function Index() {
             Severe hypertriglyceridemia (sHTG) and its dangers demand
           </h1>
 
-          <div className="text-gradient-gold text-[150px] font-bold leading-[170px] overflow-visible">
+          <div className="text-gradient-gold text-[150px] font-bold leading-[220px] overflow-visible inline-block align-baseline">
             urgent action
             <span className="font-normal text-lg md:text-3xl lg:text-5xl xl:text-[120px] align-top">
               ¹
