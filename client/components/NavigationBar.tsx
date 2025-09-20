@@ -43,7 +43,7 @@ export default function NavigationBar() {
         <div className="flex items-center">
           <div className="w-px h-[115px] bg-black mr-16"></div>
           <div className="relative w-[97px] h-[97px] flex items-center justify-center">
-            <Book className="w-[97px] h-[97px] text-black" fill="currentColor" />
+            <RefBook className="w-[97px] h-[97px]" />
             <div className="absolute inset-0 flex items-center justify-center">
               <span className="text-white text-[25px] font-bold">REF</span>
             </div>
