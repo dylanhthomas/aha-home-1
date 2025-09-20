@@ -213,7 +213,7 @@
   .nav-button-wrapper {
     position: relative;
     display: inline-block;
-    padding: 0 67px;
+
   }
   .nav-button-wrapper .active-indicator,
   .home-button .active-indicator {
@@ -226,6 +226,11 @@
     background: #b82026;
     border-radius: 2px;
   }
+
+.nav-button-wrapper button,
+.nav-button-wrapper svg{
+    padding: 0 67px;
+}
 
   /* Navigation separator */
   .nav-sep {
