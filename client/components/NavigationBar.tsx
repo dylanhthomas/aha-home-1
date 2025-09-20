@@ -92,7 +92,9 @@ export default function NavigationBar() {
         {/* Reference Book */}
           <div className="flex items-center justify-center nav-item">
             <div className="nav-button-wrapper">
-              <RefBook className="w-[97px] h-[97px]" />
+            <button>
+                <RefBook className="w-[97px] h-[97px]" />
+              </button>
           </div>
           </div>
         </div>
