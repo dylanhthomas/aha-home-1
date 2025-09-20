@@ -10,16 +10,16 @@ const navigationItems = [
 
 export default function NavigationBar() {
   return (
-    <div className="w-full bg-white relative">
+    <div className="w-[2160px] mx-auto bg-white relative">
       {/* Red stripe at top */}
-      <div className="w-full h-8 bg-medical-red-gradient"></div>
+      <div className="w-[2160px] h-[31px] bg-medical-red-gradient"></div>
       
       {/* Main navigation content */}
-      <div className="flex items-center justify-between px-4 md:px-16 py-4 md:py-8">
+      <div className="flex items-center justify-between px-[65px] py-[96px]">
         {/* Home Icon with red stripe */}
         <div className="relative">
-          <div className="w-12 h-12 md:w-20 md:h-20 flex items-center justify-center">
-            <Home className="w-8 h-8 md:w-12 md:h-12 text-medical-red-500" fill="currentColor" />
+          <div className="w-[79px] h-[79px] flex items-center justify-center">
+            <Home className="w-[79px] h-[79px] text-medical-red-500" fill="currentColor" />
           </div>
           <div className="absolute -bottom-2 left-0 w-full h-1 bg-medical-red-500"></div>
         </div>
@@ -29,9 +29,9 @@ export default function NavigationBar() {
           {navigationItems.map((item, index) => (
             <div key={item.label} className="flex items-center">
               {index > 0 && (
-                <div className="w-px h-8 md:h-[115px] bg-black mr-2 md:mr-16"></div>
+                <div className="w-px h-[115px] bg-black mr-16"></div>
               )}
-              <button className="text-black text-xs md:text-2xl lg:text-[40px] font-medium hover:text-medical-red-500 transition-colors text-center whitespace-nowrap">
+              <button className="text-black text-[40px] font-medium hover:text-medical-red-500 transition-colors text-center whitespace-nowrap">
                 {item.label}
               </button>
             </div>
@@ -40,11 +40,11 @@ export default function NavigationBar() {
 
         {/* Reference Book */}
         <div className="flex items-center">
-          <div className="w-px h-8 md:h-[115px] bg-black mr-2 md:mr-16"></div>
-          <div className="relative w-12 h-12 md:w-24 md:h-24 flex items-center justify-center">
-            <Book className="w-8 h-8 md:w-16 md:h-16 text-black" fill="currentColor" />
+          <div className="w-px h-[115px] bg-black mr-16"></div>
+          <div className="relative w-[97px] h-[97px] flex items-center justify-center">
+            <Book className="w-[97px] h-[97px] text-black" fill="currentColor" />
             <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-white text-xs md:text-lg font-bold">REF</span>
+              <span className="text-white text-[25px] font-bold">REF</span>
             </div>
           </div>
         </div>
