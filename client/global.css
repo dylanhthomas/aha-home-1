@@ -223,15 +223,16 @@
     position: relative;
     display: inline-block;
   }
-  .nav-button-wrapper .active-indicator,
-  .home-button .active-indicator {
+  .nav-item.active .nav-button-wrapper::after,
+  .nav-item.active .home-button::after {
+    content: "";
     position: absolute;
-    bottom: -49px;
+    bottom: -6px;
     left: 0;
     right: 0;
-    width: auto;
     height: 14px;
-    background: #b82026;
+    background: #B82026;
+    border-radius: 2px;
   }
 
   .nav-button-wrapper button {
