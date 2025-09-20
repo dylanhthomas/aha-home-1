@@ -22,7 +22,7 @@ export default function NavigationBar() {
               <path d="M39.4607 13.1726L7.49976 42.6623V80.0599H31.2233V58.9723H47.698V80.0599H71.4216V42.6623C71.2568 42.6623 39.4607 13.1726 39.4607 13.1726Z" fill="#B82026"/>
             </svg>
           </div>
-          <div className="absolute -bottom-2 left-0 w-full h-1 bg-medical-red-500"></div>
+          <div className="absolute bottom-0 left-0 w-full h-[12px] bg-medical-red-500"></div>
         </div>
 
         {/* Navigation Items */}
