@@ -111,15 +111,21 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family:
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
   }
 
   /* Ensure Inter font is loaded */
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
   /* Medical App Specific Styles */
   .text-gradient-gold {
-    background: linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%);
+    background: linear-gradient(90deg, #f0e389 0%, #ffb200 50%, #b78700 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -129,7 +135,8 @@
   .card-gradient-border {
     /* Transparent inner area with a gold gradient border that lets the page background show through */
     border: 3px solid transparent;
-    border-image: linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%) 1;
+    border-image: linear-gradient(90deg, #f0e389 0%, #ffb200 50%, #b78700 100%)
+      1;
     background: transparent; /* Let page background show through */
   }
 

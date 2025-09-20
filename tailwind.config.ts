@@ -19,15 +19,15 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        'medical-red': {
-          500: '#B62026',
-          600: '#591012',
-          900: '#110101',
+        "medical-red": {
+          500: "#B62026",
+          600: "#591012",
+          900: "#110101",
         },
-        'medical-gold': {
-          300: '#F0E389',
-          400: '#FFB200',
-          500: '#B78700',
+        "medical-gold": {
+          300: "#F0E389",
+          400: "#FFB200",
+          500: "#B78700",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -69,10 +69,14 @@ export default {
         },
       },
       backgroundImage: {
-        'medical-red-gradient': 'linear-gradient(90deg, #B62026 0%, #591012 100%)',
-        'medical-red-complex': 'linear-gradient(162deg, #B62026 0%, #591012 49.52%, #110101 100%)',
-        'medical-gold-gradient': 'linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%)',
-        'card-arrow-gradient': 'linear-gradient(129deg, #F0E389 -1287.47%, #FFB200 -593.73%, #B78700 100%)',
+        "medical-red-gradient":
+          "linear-gradient(90deg, #B62026 0%, #591012 100%)",
+        "medical-red-complex":
+          "linear-gradient(162deg, #B62026 0%, #591012 49.52%, #110101 100%)",
+        "medical-gold-gradient":
+          "linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%)",
+        "card-arrow-gradient":
+          "linear-gradient(129deg, #F0E389 -1287.47%, #FFB200 -593.73%, #B78700 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",
