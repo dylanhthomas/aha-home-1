@@ -47,13 +47,12 @@ export default function InfoCard({ icon, children, onClick, active = false, onPr
 
           {/* Arrow Section */}
       <div className="w-[76px] bg-card-arrow-gradient flex items-center justify-center flex-shrink-0 relative z-10">
-        {!active ? (
-          <ChevronRight className={`w-12 h-12 text-white transform rotate-90`} strokeWidth={4} />
-        ) : (
+        <ChevronRight className={`w-12 h-12 text-white`} strokeWidth={4} />
+        {active && (
           <div className="learn-more-active-rotated">
             <div className="learn-more-active flex items-center text-white text-[30px] leading-none">
               <span className="font-medium mr-3">LEARN</span>
-              <ChevronRight className={`w-6 h-6 text-white`} strokeWidth={4} />
+              <ChevronRight className={`w-6 h-6 text-white transform rotate-90`} strokeWidth={4} />
               <span className="font-medium ml-3">MORE</span>
             </div>
           </div>
