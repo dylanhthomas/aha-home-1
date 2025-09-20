@@ -70,13 +70,13 @@ export default {
       },
       backgroundImage: {
         "medical-red-gradient":
-          "linear-gradient(90deg, #B62026 0%, #591012 100%)",
+          "linear-gradient(90deg, hsl(var(--red-primary)) 0%, #591012 100%)",
         "medical-red-complex":
-          "linear-gradient(162deg, #B62026 0%, #591012 49.52%, #110101 100%)",
+          "linear-gradient(162deg, hsl(var(--red-primary)) 0%, #591012 49.52%, #110101 100%)",
         "medical-gold-gradient":
-          "linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%)",
+          "linear-gradient(90deg, hsl(var(--gold-stop-1)) 0%, hsl(var(--gold-stop-2)) 50%, hsl(var(--gold-stop-3)) 100%)",
         "card-arrow-gradient":
-          "linear-gradient(129deg, #F0E389 -1287.47%, #FFB200 -593.73%, #B78700 100%)",
+          "linear-gradient(129deg, hsl(var(--gold-stop-1)) -1287.47%, hsl(var(--gold-stop-2)) -593.73%, hsl(var(--gold-stop-3)) 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",
