@@ -22,8 +22,8 @@ export default function InfoCard({ icon, children, onClick }: InfoCardProps) {
             </div>
           </div>
 
-          {/* Vertical Line */}
-          <div className="w-px bg-medical-gold-400 flex-shrink-0"></div>
+          {/* Vertical Line (thicker, shorter, with gaps top/bottom to match Figma) */}
+        <div className="w-[6px] bg-medical-gold-400 rounded-md mx-8 my-[50px] h-[244px] flex-shrink-0"></div>
 
           {/* Content Section */}
           <div className="flex-1 p-[40px] flex items-center relative z-10">
