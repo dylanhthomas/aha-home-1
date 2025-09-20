@@ -20,14 +20,14 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         "medical-red": {
-          500: "#B62026",
-          600: "#591012",
-          900: "#110101",
+          500: "hsl(var(--red-primary))",
+          600: "hsl(var(--red-primary))",
+          900: "hsl(var(--red-primary))",
         },
         "medical-gold": {
-          300: "#F0E389",
-          400: "#FFB200",
-          500: "#B78700",
+          300: "hsl(var(--gold-stop-1))",
+          400: "hsl(var(--gold-stop-2))",
+          500: "hsl(var(--gold-stop-3))",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
