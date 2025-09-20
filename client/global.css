@@ -227,7 +227,7 @@
   .nav-item.active .home-button::after {
     content: "";
     position: absolute;
-    bottom: -6px;
+    bottom: -49px;
     left: 0;
     right: 0;
     height: 14px;
