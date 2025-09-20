@@ -1,4 +1,5 @@
-import { Home, Book } from 'lucide-react';
+import { Home } from 'lucide-react';
+import RefBook from '@/components/icons/RefBook';
 
 const navigationItems = [
   { label: 'About sHTG', active: false },
