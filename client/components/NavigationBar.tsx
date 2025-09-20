@@ -33,7 +33,6 @@ export default function NavigationBar() {
                     />
                   </svg>
                 </button>
-                {homeActive && <div className="active-indicator" />}
               </div>
             </div>
           </div>
