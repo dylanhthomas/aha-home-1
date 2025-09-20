@@ -141,4 +141,15 @@
   }
 
   /* removed the previous ::before overlay so the inner background is transparent */
+
+  /* Vertical gradient divider used in InfoCard */
+  .vertical-gradient-gold {
+    width: 3px;
+    height: 244px;
+    background: linear-gradient(180deg, #F0E389 0%, #FFB200 50%, #B78700 100%);
+    border-radius: 2px;
+    margin-left: 32px;
+    margin-right: 32px;
+    align-self: center;
+  }
 }
