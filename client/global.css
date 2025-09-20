@@ -187,7 +187,7 @@
     align-self: center;
   }
 
-  /* Learn more rotated label */
+  /* Learn more rotated label (unused for active state) */
   .learn-more {
     transform: rotate(-90deg);
     transform-origin: left center;
@@ -196,6 +196,10 @@
     color: #fff;
     white-space: nowrap;
   }
+
+  /* Active learn more that sits inside the arrow area */
+  .learn-more-active { display: flex; align-items: center; gap: 8px; }
+  .learn-more-active span { color: #fff; }
 
   /* Typography helper classes to use exact sizes */
   .h1 {
