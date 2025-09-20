@@ -12,9 +12,6 @@ const navigationItems = [
 export default function NavigationBar() {
   return (
     <div className="w-[2160px] mx-auto bg-white relative">
-      {/* Red stripe at top */}
-      <div className="w-[2160px] h-[31px] bg-medical-red-gradient"></div>
-
       {/* Main navigation content */}
       <div className="flex items-center justify-between px-[65px] py-[96px]">
         {/* Home Icon with red stripe */}
