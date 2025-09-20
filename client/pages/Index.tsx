@@ -22,23 +22,23 @@ export default function Index() {
 
         {/* Main Heading */}
         <div className="text-center space-y-4 md:space-y-8 max-w-7xl mx-auto">
-          <h1 className="text-white text-2xl md:text-6xl lg:text-[120px] font-light leading-tight md:leading-[140px]">
+          <h1 className="text-white text-xl md:text-4xl lg:text-6xl xl:text-[120px] font-light leading-tight lg:leading-[140px] px-4">
             Severe hypertriglyceridemia (sHTG) and its dangers demand
           </h1>
-          
-          <div className="text-gradient-gold text-3xl md:text-7xl lg:text-[150px] font-bold leading-tight md:leading-[140px]">
-            urgent action<span className="font-normal">¹</span>
+
+          <div className="text-gradient-gold text-2xl md:text-5xl lg:text-7xl xl:text-[150px] font-bold leading-tight lg:leading-[140px]">
+            urgent action<span className="font-normal text-lg md:text-3xl lg:text-5xl xl:text-[120px] align-top">¹</span>
           </div>
         </div>
       </div>
 
       {/* Information Cards Section */}
-      <div className="px-4 md:px-16 space-y-8 md:space-y-16 pb-16 md:pb-32">
+      <div className="px-4 md:px-8 lg:px-16 space-y-6 md:space-y-12 lg:space-y-16 pb-16 md:pb-32">
         <InfoCard 
           icon={<PeopleIcon className="w-full h-full" />}
           onClick={() => console.log('People card clicked')}
         >
-          sHTG is an <span className="font-bold">underappreciated</span> disease that affects millions and requires urgent action, as highlighted in expert publications by the <span className="font-bold">American Heart Association</span>, the <span className="font-bold">American College of Cardiology</span>, the <span className="font-bold">Endocrine Society</span>, and the <span className="font-bold">National Lipid Association</span><span className="text-xs md:text-2xl align-top">1-7</span>
+          sHTG is an <span className="font-bold">underappreciated</span> disease that affects millions and requires urgent action, as highlighted in expert publications by the <span className="font-bold">American Heart Association</span>, the <span className="font-bold">American College of Cardiology</span>, the <span className="font-bold">Endocrine Society</span>, and the <span className="font-bold">National Lipid Association</span><span className="text-xs md:text-lg lg:text-2xl align-top">1-7</span>
         </InfoCard>
 
         <InfoCard 

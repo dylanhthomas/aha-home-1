@@ -114,16 +114,29 @@
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
+  /* Ensure Inter font is loaded */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
   /* Medical App Specific Styles */
   .text-gradient-gold {
     background: linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent; /* Fallback for browsers that don't support background-clip */
   }
 
-  .border-gradient-gold {
-    border: 3px solid;
-    border-image: linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%) 1;
+  .card-gradient-border {
+    position: relative;
+    background: linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%);
+    padding: 3px;
+  }
+
+  .card-gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: linear-gradient(162deg, #B62026 0%, #591012 49.52%, #110101 100%);
+    z-index: -1;
   }
 }
