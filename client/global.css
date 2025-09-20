@@ -95,6 +95,12 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Medical sHTG App Colors */
+    --medical-red: 180 53% 42%;
+    --medical-red-dark: 351 77% 20%;
+    --medical-gold: 45 64% 48%;
+    --medical-gold-light: 50 71% 75%;
   }
 }
 
@@ -105,5 +111,19 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Medical App Specific Styles */
+  .text-gradient-gold {
+    background: linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gradient-gold {
+    border: 3px solid;
+    border-image: linear-gradient(90deg, #F0E389 0%, #FFB200 50%, #B78700 100%) 1;
   }
 }
