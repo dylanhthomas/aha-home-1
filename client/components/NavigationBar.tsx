@@ -30,7 +30,7 @@ export default function NavigationBar() {
           {navigationItems.map((item, index) => (
             <div key={item.label} className={`flex items-center nav-item ${item.active ? 'active' : ''}`}>
               {index > 0 && (
-                <div className="w-px h-[115px] bg-black mr-16"></div>
+                <div className="nav-sep"></div>
               )}
               <button className="text-black text-[40px] font-medium hover:text-medical-red-500 transition-colors text-center whitespace-nowrap">
                 {item.label}
