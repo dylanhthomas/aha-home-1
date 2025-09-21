@@ -1,9 +1,13 @@
 import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import RefBook from "@/components/icons/RefBook";
 
-const homeActive = true;
-
 export default function NavigationBar() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const isHomePage = location.pathname === "/";
+  const isAboutPage = location.pathname === "/about-shtg";
   return (
     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[2160px] bg-white z-nav">
       {/* Main navigation content */}
