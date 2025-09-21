@@ -57,7 +57,7 @@ export default function NavigationBar() {
 
           <div className="nav-sep" />
 
-          <div className="flex items-center nav-item active">
+          <div className="flex items-center nav-item">
             <div className="nav-button-wrapper">
               <button className="text-black text-[40px] font-medium hover:text-medical-red-500 transition-colors text-center whitespace-nowrap">
                 AP risk
@@ -77,7 +77,7 @@ export default function NavigationBar() {
 
           <div className="nav-sep" />
 
-          <div className="flex items-center nav-item active">
+          <div className="flex items-center nav-item">
             <div className="nav-button-wrapper">
               <button className="text-black text-[40px] font-medium hover:text-medical-red-500 transition-colors text-center whitespace-nowrap">
                 Other risks
