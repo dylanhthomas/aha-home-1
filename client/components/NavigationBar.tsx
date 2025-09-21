@@ -15,10 +15,10 @@ export default function NavigationBar() {
         {/* Home Icon with active support */}
 
         <div className="flex items-center flex-1">
-          <div className={`nav-item ${homeActive ? "active" : ""}`}>
+          <div className={`nav-item ${isHomePage ? "active" : ""}`}>
             <div className="nav-button-wrapper">
               <div className="flex items-center justify-center relative home-button">
-                <button>
+                <button onClick={() => navigate("/")}>
                   <svg
                     width="79"
                     height="81"
