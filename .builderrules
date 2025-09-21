@@ -1,1 +1,3 @@
 always use colors and measurements (dimensions, font-size, stroke weight, etc) exactly as they appear in the figma file.
+
+unless instructed to, do not make a responsive design, keep the static dimensions as provided.
