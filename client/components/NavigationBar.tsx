@@ -44,9 +44,12 @@ export default function NavigationBar() {
           {/* Navigation Items (static) */}
           <div className="nav-sep" />
 
-          <div className="flex items-center nav-item">
+          <div className={`flex items-center nav-item ${isAboutPage ? "active" : ""}`}>
             <div className="nav-button-wrapper">
-              <button className="text-black text-[40px] font-medium hover:text-medical-red-500 transition-colors text-center whitespace-nowrap">
+              <button
+                onClick={() => navigate("/about-shtg")}
+                className="text-black text-[40px] font-medium hover:text-medical-red-500 transition-colors text-center whitespace-nowrap"
+              >
                 About sHTG
               </button>
             </div>
