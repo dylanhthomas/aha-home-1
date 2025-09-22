@@ -131,8 +131,6 @@ export default function Index() {
         ))}
       </div>
 
-      {/* Navigation Bar */}
-      <NavigationBar />
     </div>
   );
 }
