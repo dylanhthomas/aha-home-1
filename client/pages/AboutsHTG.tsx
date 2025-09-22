@@ -99,8 +99,8 @@ export default function AboutsHTG() {
             </div>
           </div>
 
-          {/* Connecting Line */}
-          <div className="absolute left-[1108px] top-0 w-[16px] h-[888px]">
+          {/* Column Divider (spanning between rows) */}
+          <div className="absolute left-[1108px] top-[826px] w-[16px] h-[888px]">
             <svg width="16" height="888" viewBox="0 0 16 888" fill="none">
               <path d="M8 0V888" stroke="url(#paint0_linear_18_29)" strokeWidth="15"/>
               <defs>
@@ -149,15 +149,15 @@ export default function AboutsHTG() {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="relative w-[2124px] h-[881px] ml-[-2px]">
+        {/* CTA Section (absolute to match Figma) */}
+        <div className="absolute left-[150px] top-[2605px] w-[2124px] h-[881px]">
           {/* Border Box */}
           <div className="absolute left-0 top-[500px] w-[1911px] h-[310px] border-[3px]" style={{ borderColor: "#B62026" }}></div>
           
           {/* Doctor & Patient Image */}
-          <div className="absolute right-[0px] top-0">
-            <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/d06be66ec3b2ea35f29bc202630df819903f60c1?width=2092"
+          <div className="absolute left-[1078px] top-0">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/d06be66ec3b2ea35f29bc202630fd819903f60c1?width=2092"
               alt="Doctor and patient consultation"
               className="w-[1046px] h-[810px] object-cover"
             />
@@ -208,13 +208,23 @@ export default function AboutsHTG() {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
-      <div className="absolute left-0 top-[1738px] w-[107px] h-[365px] rounded-r-[40px] bg-gradient-to-b from-[#B62026] to-[#591012] flex items-center justify-center">
-        <ChevronLeft className="w-[45px] h-[33px] text-white" strokeWidth={10} style={{ transform: "rotate(-90deg)" }} />
+      {/* Navigation Arrows (SVGs from Figma) */}
+      <div
+        className="absolute left-0 top-[1738px] w-[107px] h-[365px] rounded-r-[40px] flex items-center justify-center"
+        style={{ background: "linear-gradient(176deg, #B62026 8.55%, #591012 97.69%)" }}
+      >
+        <svg width="45" height="69" viewBox="0 0 45 69" fill="none">
+          <path d="M41 4L8 34.5L41 65" stroke="white" strokeWidth="10" />
+        </svg>
       </div>
-      
-      <div className="absolute right-0 top-[1738px] w-[107px] h-[365px] rounded-l-[40px] bg-gradient-to-b from-[#B62026] to-[#591012] flex items-center justify-center">
-        <ChevronRight className="w-[45px] h-[33px] text-white" strokeWidth={10} />
+
+      <div
+        className="absolute right-0 top-[1738px] w-[107px] h-[365px] rounded-l-[40px] flex items-center justify-center"
+        style={{ background: "linear-gradient(176deg, #B62026 8.55%, #591012 97.69%)" }}
+      >
+        <svg width="45" height="69" viewBox="0 0 45 69" fill="none">
+          <path d="M4 4L37 34.5L4 65" stroke="white" strokeWidth="10" />
+        </svg>
       </div>
 
       {/* Navigation Bar */}
