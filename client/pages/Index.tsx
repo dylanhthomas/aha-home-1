@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TGAwareLogo from "@/components/TGAwareLogo";
 import InfoCard from "@/components/InfoCard";
-import NavigationBar from "@/components/NavigationBar";
 import PeopleIcon from "@/components/icons/PeopleIcon";
 import PancreasIcon from "@/components/icons/PancreasIcon";
 import HeartIcon from "@/components/icons/HeartIcon";
