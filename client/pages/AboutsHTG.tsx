@@ -226,8 +226,6 @@ export default function AboutsHTG() {
         </svg>
       </div>
 
-      {/* Navigation Bar */}
-      <NavigationBar />
     </div>
   );
 }
