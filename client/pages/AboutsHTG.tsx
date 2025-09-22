@@ -19,7 +19,7 @@ export default function AboutsHTG() {
         </div>
 
         {/* TGAware Logo */}
-        <div className="absolute right-[101px] top-[56px]">
+        <div className="absolute left-[1892px] top-[56px]">
           <TGAwareLogo className="w-[167px] h-[70px]" />
         </div>
       </div>
