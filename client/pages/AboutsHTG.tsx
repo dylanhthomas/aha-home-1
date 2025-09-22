@@ -100,7 +100,7 @@ export default function AboutsHTG() {
           </div>
 
           {/* Column Divider (spanning between rows) */}
-          <div className="absolute left-[1108px] top-[826px] w-[16px] h-[888px]">
+          <div className="absolute left-[1108px] top-[868px] w-[16px] h-[888px]">
             <svg width="16" height="888" viewBox="0 0 16 888" fill="none">
               <path d="M8 0V888" stroke="url(#paint0_linear_18_29)" strokeWidth="15"/>
               <defs>
@@ -139,12 +139,14 @@ export default function AboutsHTG() {
 
             {/* The Endocrine Society */}
             <div className="w-[829px] relative">
-              <h3 className="text-[60px] font-bold leading-[70px] mb-[49px]" style={{ color: "#B82026" }}>
-                The Endocrine Society
-              </h3>
-              <p className="text-[45px] font-normal leading-[63px]" style={{ color: "#221F20" }}>
-                has detailed in an advisory that the primary goal of therapy is to reduce triglycerides to &lt;500 mg/dL6
-              </p>
+              <div className="ml-[72px]">
+                <h3 className="text-[60px] font-bold leading-[70px] mb-[49px]" style={{ color: "#B82026" }}>
+                  The Endocrine Society
+                </h3>
+                <p className="text-[45px] font-normal leading-[63px]" style={{ color: "#221F20" }}>
+                  has detailed in an advisory that the primary goal of therapy is to reduce triglycerides to &lt;500 mg/dL6
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -155,7 +157,7 @@ export default function AboutsHTG() {
           <div className="absolute left-0 top-[500px] w-[1911px] h-[310px] border-[3px]" style={{ borderColor: "#B62026" }}></div>
           
           {/* Doctor & Patient Image */}
-          <div className="absolute left-[1078px] top-0">
+          <div className="absolute left-[964px] top-0">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/d06be66ec3b2ea35f29bc202630fd819903f60c1?width=2092"
               alt="Doctor and patient consultation"
