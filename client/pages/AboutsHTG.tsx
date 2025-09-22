@@ -100,7 +100,7 @@ export default function AboutsHTG() {
           </div>
 
           {/* Column Divider (spanning between rows) */}
-          <div className="absolute left-[1108px] top-[868px] w-[16px] h-[888px]">
+          <div className="absolute left-[956px] top-[868px] w-[16px] h-[888px]">
             <svg width="16" height="888" viewBox="0 0 16 888" fill="none">
               <path d="M8 0V888" stroke="url(#paint0_linear_18_29)" strokeWidth="15"/>
               <defs>
