@@ -130,7 +130,6 @@ export default function Index() {
           </InfoCard>
         ))}
       </div>
-
     </div>
   );
 }

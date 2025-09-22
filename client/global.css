@@ -259,7 +259,6 @@
     }
   }
 
-
   /* z-index helpers */
   .z-hero {
     z-index: var(--z-hero);
