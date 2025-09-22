@@ -99,19 +99,6 @@ export default function AboutsHTG() {
             </div>
           </div>
 
-          {/* Column Divider (spanning between rows) */}
-          <div className="absolute left-[956px] top-[868px] w-[16px] h-[888px]">
-            <svg width="16" height="888" viewBox="0 0 16 888" fill="none">
-              <path d="M8 0V888" stroke="url(#paint0_linear_18_29)" strokeWidth="15"/>
-              <defs>
-                <linearGradient id="paint0_linear_18_29" x1="8.52076" y1="888" x2="8.49434" y2="-1.47056e-05" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#591012"/>
-                  <stop offset="1" stopColor="#B62026"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-
           {/* Second Row */}
           <div className="flex justify-between">
             {/* National Lipid Association */}
