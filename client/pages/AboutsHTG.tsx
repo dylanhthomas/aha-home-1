@@ -126,6 +126,17 @@ export default function AboutsHTG() {
 
             {/* The Endocrine Society */}
             <div className="w-[829px] relative">
+             <div className="absolute left-0 top-0 w-[16px] h-[888px]">
+                <svg width="16" height="888" viewBox="0 0 16 888" fill="none">
+                  <path d="M8 0V888" stroke="url(#paint0_linear_18_30)" strokeWidth="15"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_18_30" x1="8.52076" y1="888" x2="8.49434" y2="-1.47056e-05" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#591012"/>
+                      <stop offset="1" stopColor="#B62026"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
               <div className="ml-[72px]">
                 <h3 className="text-[60px] font-bold leading-[70px] mb-[49px]" style={{ color: "#B82026" }}>
                   The Endocrine Society
