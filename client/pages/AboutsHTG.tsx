@@ -1,6 +1,5 @@
 import React from "react";
 import TGAwareLogo from "@/components/TGAwareLogo";
-import NavigationBar from "@/components/NavigationBar";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function AboutsHTG() {
