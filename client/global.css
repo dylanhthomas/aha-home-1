@@ -259,39 +259,6 @@
     }
   }
 
-  /* Active indicator for nav items */
-  .nav-item {
-    display: inline-flex;
-    align-items: center;
-  }
-  .nav-button-wrapper {
-    position: relative;
-    display: inline-block;
-  }
-  .nav-item.active .nav-button-wrapper::after,
-  .nav-item.active .home-button::after {
-    content: "";
-    position: absolute;
-    bottom: -49px;
-    left: 0;
-    right: 0;
-    height: 14px;
-    background: #b82026;
-    border-radius: 2px;
-  }
-
-  .nav-button-wrapper button {
-    padding: 0 67px;
-    height: 115px;
-  }
-
-  /* Navigation separator */
-  .nav-sep {
-    width: 1px;
-    height: 115px;
-    background: #000;
-    margin: 0;
-  }
 
   /* z-index helpers */
   .z-hero {
